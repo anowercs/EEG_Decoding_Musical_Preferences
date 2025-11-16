@@ -219,6 +219,5 @@ If you want:
 
 * a version of this README with emojis removed,
 * a short version for journal submission,
-* or an English-polished version for your thesis appendix,
 
 just tell me — I can generate those too.
