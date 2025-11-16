@@ -1,0 +1,127 @@
+======================================================================
+OVERFITTING DETECTION AND ANALYSIS
+======================================================================
+📂 Loading data from: /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/eeg_features_full_synthetic.pkl
+🔬 TESTING: Synthetic data (may have overfitting)
+✅ Matplotlib test successful: /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/overfitting_matplotlib_test.png
+✅ Data loaded: 657 samples, 417 features
+
+🔧 Preparing data for overfitting analysis...
+📊 Class distribution:
+   Dislike (1): 213 samples (32.4%)
+   Medium (3): 225 samples (34.2%)
+   Like (5): 219 samples (33.3%)
+   Selected 40 features
+   Data scaled using RobustScaler
+
+⏱️ Starting overfitting analysis...
+
+🔍 METHOD 1: TRAIN-TEST PERFORMANCE GAP
+--------------------------------------------------
+
+🤖 Analyzing Random Forest...
+   Train Accuracy: 1.000
+   Test Accuracy:  0.576
+   Gap:            0.424
+   🚨 HIGH OVERFITTING RISK (gap > 10%)
+
+🤖 Analyzing Extra Trees...
+   Train Accuracy: 1.000
+   Test Accuracy:  0.659
+   Gap:            0.341
+   🚨 HIGH OVERFITTING RISK (gap > 10%)
+
+🤖 Analyzing SVM...
+   Train Accuracy: 0.966
+   Test Accuracy:  0.652
+   Gap:            0.314
+   🚨 HIGH OVERFITTING RISK (gap > 10%)
+
+🔍 METHOD 2: CROSS-VALIDATION STABILITY
+--------------------------------------------------
+
+🤖 Cross-validating Random Forest...
+   CV Scores: ['0.553', '0.538', '0.481', '0.702', '0.695']
+   Mean CV:   0.594
+   Std CV:    0.089
+   ⚠️  MODERATE VARIANCE (std 5-10%)
+
+🤖 Cross-validating Extra Trees...
+   CV Scores: ['0.583', '0.583', '0.489', '0.756', '0.679']
+   Mean CV:   0.618
+   Std CV:    0.092
+   ⚠️  MODERATE VARIANCE (std 5-10%)
+
+🤖 Cross-validating SVM...
+   CV Scores: ['0.538', '0.591', '0.458', '0.740', '0.672']
+   Mean CV:   0.600
+   Std CV:    0.099
+   ⚠️  MODERATE VARIANCE (std 5-10%)
+
+🔍 METHOD 3: LEARNING CURVES ANALYSIS
+--------------------------------------------------
+
+🤖 Learning curve for Random Forest...
+   Final train-val gap: 0.390
+   🚨 OVERFITTING: Large final gap
+
+🤖 Learning curve for Extra Trees...
+   Final train-val gap: 0.391
+   🚨 OVERFITTING: Large final gap
+
+🤖 Learning curve for SVM...
+   Final train-val gap: 0.360
+   🚨 OVERFITTING: Large final gap
+✅ Learning curves saved to: /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/over_fitting_learning_curves_analysis.png
+
+🔍 METHOD 4: VALIDATION CURVES (Random Forest)
+--------------------------------------------------
+Analyzing n_estimators parameter...
+✅ Validation curve saved to: /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/over_fitting_validation_curve_Random Forest_n_estimators.png
+   Optimal n_estimators: 100
+   Best validation score: 0.613
+   Maximum train-val gap: 0.402
+   🚨 HIGH OVERFITTING across parameter range
+
+🔍 METHOD 5: SUBJECT-WISE OVERFITTING
+--------------------------------------------------
+Analyzing 20 subjects...
+
+======================================================================
+COMPREHENSIVE OVERFITTING ANALYSIS REPORT
+======================================================================
+
+🔍 TRAIN-TEST GAP ANALYSIS:
+   Random Forest        | Gap: 0.424 | 🚨 HIGH
+   Extra Trees          | Gap: 0.341 | 🚨 HIGH
+   SVM                  | Gap: 0.314 | 🚨 HIGH
+
+🔍 CROSS-VALIDATION STABILITY:
+   Random Forest        | Std: 0.089 | ⚠️ MOD VAR
+   Extra Trees          | Std: 0.092 | ⚠️ MOD VAR
+   SVM                  | Std: 0.099 | ⚠️ MOD VAR
+
+💡 OVERFITTING RECOMMENDATIONS:
+   • If HIGH overfitting detected:
+     - Reduce model complexity (fewer trees, lower depth)
+     - Use more regularization
+     - Increase training data
+     - Apply dropout or early stopping
+   • If MODERATE overfitting:
+     - Monitor validation performance
+     - Consider ensemble methods
+   • If LOW overfitting:
+     - Current model is well-regularized
+     - Consider increasing complexity for better performance
+
+✅ Overfitting analysis complete!
+📊 Generated plots:
+   - /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/learning_curves_analysis.png
+   - /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/validation_curve_Random Forest_n_estimators.png
+
+🔍 To check if plots exist, run:
+   ls -la /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/*.png
+
+💡 To test original data, change the path in main() function:
+   features_path = '/home/anower/All/Python/Thesis_VS_code/full_epoch/Figure/eeg_features_full.pkl'
+

@@ -1,0 +1,42 @@
+anower@anower-P453UJ:~/All/Python/Thesis_VS_code$ /usr/bin/python3 /home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/full_epoch_v2.py
+Successfully loaded processed data from '/home/anower/All/Python/Thesis_VS_code/full_epoch/Data/Data_processed/processed_eeg_data_full.pkl'
+======================================================================
+STEP 2.3: FULL-DURATION EPOCH DEFINITION AND SEGMENTATION
+======================================================================
+
+📊 FULL EPOCH PARAMETERS (EEG_Songs):
+├─ Epoch Definition: Complete song duration
+├─ Average Epoch Duration: 80.0 seconds
+├─ Sampling Frequency: 128 Hz
+├─ Samples per Epoch: 10,240
+├─ Number of Channels: 14
+├─ Epochs per Song: 1 (full song)
+└─ Total Song Epochs (after artifact removal): 20
+
+📊 FULL EPOCH PARAMETERS (EEG_Rest):
+└─ No rest data available
+/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/full_epoch_v2.py:126: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+Full epoch structure figure saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_full_epoch_structure_s01.png'
+Full epoched data saved to '/home/anower/All/Python/Thesis_VS_code/full_epoch/Data/Data_processed/epoched_eeg_data_full.pkl'
+
+======================================================================
+FORMAL FULL-DURATION EPOCH DEFINITION FOR THESIS
+======================================================================
+
+In this study, EEG data was segmented into full-duration epochs corresponding to complete 
+musical stimuli and the entire resting-state period to preserve the holistic neural response 
+patterns for music preference analysis.
+
+• Epoch Definition: Complete song duration (~80 seconds) and full rest period (~70 seconds)
+• Epoch Onset: Beginning of stimulus presentation
+• Epoch Offset: End of stimulus presentation  
+• Songs per Subject: 30 (before artifact rejection)
+• Rest Epochs per Subject: 1 complete period
+• Data Preservation: Maintains temporal dynamics and sustained neural responses
+• Labels: Each song epoch inherits its corresponding preference rating; rest epoch = neutral (0)
+
+This approach captures the complete neural response to musical stimuli, enabling analysis of 
+sustained brain activity patterns that may be critical for understanding music preference 
+mechanisms and supporting machine learning classification models.
+    

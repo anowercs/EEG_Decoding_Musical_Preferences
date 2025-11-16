@@ -1,0 +1,685 @@
+======================================================================
+EXPERIMENT 2: TRADITIONAL MACHINE LEARNING WITH Synthetic and COMPREHENSIVE LOSO (FULL EPOCHS)
+======================================================================
+Data loaded successfully!
+   Feature matrix shape: (657, 417)
+   Ratings shape: (657,)
+   Rating range: [1.0, 5.0]
+   Rating mean: 3.02 ± 1.62
+   Number of subjects: 20
+   Number of features: 417
+   Songs per subject: 32.9
+
+Starting ML experiments at 03:04:07
+
+============================================================
+CLASSIFICATION EXPERIMENT (FULL EPOCHS)
+============================================================
+
+--- 2-CLASS CLASSIFICATION ---
+
+Original Rating Distribution:
+   Rating 1.0: 213 samples (32.4%)
+   Rating 3.0: 225 samples (34.2%)
+   Rating 5.0: 219 samples (33.3%)
+
+New Classification (balanced, 2 classes):
+   Low (1-2): 213 samples (32.4%)
+   High (3-5): 444 samples (67.6%)
+
+Feature Selection (univariate)...
+   Removed 0 constant features
+   Remaining features: 417
+   Selected 40 features
+   Top 5 features by F-score:
+   - F3_temporal_trend: 11.97
+   - Fp2_p75: 10.81
+   - Fp2_iqr: 9.04
+   - T4_var: 8.66
+   - T4_std: 8.12
+
+Train/Test Split:
+   Training samples: 525
+   Test samples: 132
+   Training class distribution: {0: 170, 1: 355}
+   Test class distribution: {0: 43, 1: 89}
+
+Training Random Forest (2-class)...
+   Best parameters: {'max_depth': 10, 'n_estimators': 100}
+   CV Accuracy: 0.722 ± 0.010
+   Test Accuracy: 0.803
+   Test Precision: 0.798
+   Test Recall: 0.803
+   Test F1-Score: 0.795
+
+Training SVM (2-class)...
+   Best parameters: {'C': 10, 'gamma': 'auto'}
+   CV Accuracy: 0.688 ± 0.003
+   Test Accuracy: 0.758
+   Test Precision: 0.782
+   Test Recall: 0.758
+   Test F1-Score: 0.764
+
+Training Logistic Regression (2-class)...
+   Best parameters: {'C': 0.1}
+   CV Accuracy: 0.579 ± 0.031
+   Test Accuracy: 0.614
+   Test Precision: 0.674
+   Test Recall: 0.614
+   Test F1-Score: 0.626
+
+Training Extra Trees (2-class)...
+   Best parameters: {'max_depth': None, 'n_estimators': 50}
+   CV Accuracy: 0.728 ± 0.023
+   Test Accuracy: 0.818
+   Test Precision: 0.819
+   Test Recall: 0.818
+   Test F1-Score: 0.807
+
+Training Linear Discriminant Analysis (2-class)...
+   CV Accuracy: 0.644 ± 0.035
+   Test Accuracy: 0.682
+   Test Precision: 0.651
+   Test Recall: 0.682
+   Test F1-Score: 0.645
+
+Training KNN (2-class)...
+   Best parameters: {'n_neighbors': 3}
+   CV Accuracy: 0.646 ± 0.045
+   Test Accuracy: 0.712
+   Test Precision: 0.709
+   Test Recall: 0.712
+   Test F1-Score: 0.710
+   Saved enhanced 2-class classification plots
+
+--- 3-CLASS CLASSIFICATION ---
+
+Original Rating Distribution:
+   Rating 1.0: 213 samples (32.4%)
+   Rating 3.0: 225 samples (34.2%)
+   Rating 5.0: 219 samples (33.3%)
+
+New Classification (balanced, 3 classes):
+   Low (1-2): 213 samples (32.4%)
+   Medium (3): 225 samples (34.2%)
+   High (4-5): 219 samples (33.3%)
+
+Feature Selection (univariate)...
+   Removed 0 constant features
+   Remaining features: 417
+   Selected 40 features
+   Top 5 features by F-score:
+   - P4_mean: 6.72
+   - F3_temporal_trend: 5.99
+   - F3_beta_peak_freq: 5.79
+   - Fp2_p75: 5.49
+   - O1_mean: 5.11
+
+Train/Test Split:
+   Training samples: 525
+   Test samples: 132
+   Training class distribution: {0: 170, 1: 180, 2: 175}
+   Test class distribution: {0: 43, 1: 45, 2: 44}
+
+Training Random Forest (3-class)...
+   Best parameters: {'max_depth': 10, 'n_estimators': 50}
+   CV Accuracy: 0.491 ± 0.049
+   Test Accuracy: 0.598
+   Test Precision: 0.600
+   Test Recall: 0.598
+   Test F1-Score: 0.599
+
+Training SVM (3-class)...
+   Best parameters: {'C': 10, 'gamma': 'scale'}
+   CV Accuracy: 0.446 ± 0.021
+   Test Accuracy: 0.667
+   Test Precision: 0.663
+   Test Recall: 0.667
+   Test F1-Score: 0.662
+
+Training Logistic Regression (3-class)...
+   Best parameters: {'C': 1}
+   CV Accuracy: 0.410 ± 0.015
+   Test Accuracy: 0.409
+   Test Precision: 0.412
+   Test Recall: 0.409
+   Test F1-Score: 0.409
+
+Training Extra Trees (3-class)...
+   Best parameters: {'max_depth': None, 'n_estimators': 50}
+   CV Accuracy: 0.518 ± 0.032
+   Test Accuracy: 0.629
+   Test Precision: 0.634
+   Test Recall: 0.629
+   Test F1-Score: 0.625
+
+Training Linear Discriminant Analysis (3-class)...
+   CV Accuracy: 0.385 ± 0.022
+   Test Accuracy: 0.417
+   Test Precision: 0.417
+   Test Recall: 0.417
+   Test F1-Score: 0.417
+
+Training KNN (3-class)...
+   Best parameters: {'n_neighbors': 5}
+   CV Accuracy: 0.406 ± 0.009
+   Test Accuracy: 0.439
+   Test Precision: 0.443
+   Test Recall: 0.439
+   Test F1-Score: 0.436
+   Saved enhanced 3-class classification plots
+
+============================================================
+REGRESSION EXPERIMENT (FULL EPOCHS)
+============================================================
+
+Feature Selection (univariate)...
+   Removed 0 constant features
+   Remaining features: 417
+   Selected 40 features
+   Top 5 features by F-score:
+   - P4_mean: 6.72
+   - F3_temporal_trend: 5.99
+   - F3_beta_peak_freq: 5.79
+   - Fp2_p75: 5.49
+   - O1_mean: 5.11
+
+Train/Test Split:
+   Training samples: 525
+   Test samples: 132
+
+Training Random Forest...
+   Best parameters: {'max_depth': None, 'n_estimators': 100}
+   Train MSE: 0.274, R²: 0.898
+   Test MSE: 1.943, R²: 0.205
+
+Training SVR...
+   Best parameters: {'C': 10, 'gamma': 'scale'}
+   Train MSE: 0.273, R²: 0.898
+   Test MSE: 2.234, R²: 0.086
+
+Training Ridge...
+   Best parameters: {'alpha': 10}
+   Train MSE: 2.348, R²: 0.121
+   Test MSE: 2.694, R²: -0.102
+
+Training Lasso...
+   Best parameters: {'alpha': 0.1}
+   Train MSE: 2.484, R²: 0.070
+   Test MSE: 2.527, R²: -0.034
+   Saved enhanced regression plots
+
+============================================================
+COMPREHENSIVE LEAVE-ONE-SUBJECT-OUT CROSS-VALIDATION
+============================================================
+
+--- LOSO for 2-CLASS CLASSIFICATION ---
+
+Original Rating Distribution:
+   Rating 1.0: 213 samples (32.4%)
+   Rating 3.0: 225 samples (34.2%)
+   Rating 5.0: 219 samples (33.3%)
+
+New Classification (balanced, 2 classes):
+   Low (1-2): 213 samples (32.4%)
+   High (3-5): 444 samples (67.6%)
+
+Feature Selection (univariate)...
+   Removed 0 constant features
+   Remaining features: 417
+   Selected 30 features
+   Top 5 features by F-score:
+   - F3_temporal_trend: 11.97
+   - Fp2_p75: 10.81
+   - Fp2_iqr: 9.04
+   - T4_var: 8.66
+   - T4_std: 8.12
+
+LOSO with Random Forest (2-class)...
+   s01: 0.594 (32 samples)
+   s02: 0.769 (39 samples)
+   s03: 0.698 (43 samples)
+   s04: 0.714 (14 samples)
+   s05: 0.707 (41 samples)
+   s06: 0.727 (22 samples)
+   s07: 0.667 (39 samples)
+   s08: 0.600 (35 samples)
+   s09: 0.647 (34 samples)
+   s10: 0.521 (48 samples)
+   s11: 0.686 (35 samples)
+   s12: 0.674 (46 samples)
+   s13: 0.750 (28 samples)
+   s14: 0.659 (41 samples)
+   s15: 0.727 (22 samples)
+   s16: 0.529 (34 samples)
+   s17: 0.643 (14 samples)
+   s18: 0.811 (37 samples)
+   s19: 0.735 (34 samples)
+   s20: 0.789 (19 samples)
+
+   Random Forest LOSO Results:
+      Mean accuracy: 0.682 ± 0.076
+      Range: [0.521, 0.811]
+      Valid subjects: 20/20
+      Overall accuracy: 0.676
+
+LOSO with Extra Trees (2-class)...
+   s01: 0.625 (32 samples)
+   s02: 0.667 (39 samples)
+   s03: 0.721 (43 samples)
+   s04: 0.643 (14 samples)
+   s05: 0.756 (41 samples)
+   s06: 0.682 (22 samples)
+   s07: 0.615 (39 samples)
+   s08: 0.600 (35 samples)
+   s09: 0.618 (34 samples)
+   s10: 0.521 (48 samples)
+   s11: 0.686 (35 samples)
+   s12: 0.696 (46 samples)
+   s13: 0.679 (28 samples)
+   s14: 0.683 (41 samples)
+   s15: 0.682 (22 samples)
+   s16: 0.588 (34 samples)
+   s17: 0.500 (14 samples)
+   s18: 0.757 (37 samples)
+   s19: 0.647 (34 samples)
+   s20: 0.789 (19 samples)
+
+   Extra Trees LOSO Results:
+      Mean accuracy: 0.658 ± 0.071
+      Range: [0.500, 0.789]
+      Valid subjects: 20/20
+      Overall accuracy: 0.659
+
+LOSO with SVM (2-class)...
+   s01: 0.500 (32 samples)
+   s02: 0.282 (39 samples)
+   s03: 0.512 (43 samples)
+   s04: 0.643 (14 samples)
+   s05: 0.732 (41 samples)
+   s06: 0.773 (22 samples)
+   s07: 0.795 (39 samples)
+   s08: 0.371 (35 samples)
+   s09: 0.441 (34 samples)
+   s10: 0.458 (48 samples)
+   s11: 0.657 (35 samples)
+   s12: 0.674 (46 samples)
+   s13: 0.679 (28 samples)
+   s14: 0.659 (41 samples)
+   s15: 0.682 (22 samples)
+   s16: 0.500 (34 samples)
+   s17: 0.714 (14 samples)
+   s18: 0.649 (37 samples)
+   s19: 0.529 (34 samples)
+   s20: 0.632 (19 samples)
+
+   SVM LOSO Results:
+      Mean accuracy: 0.594 ± 0.134
+      Range: [0.282, 0.795]
+      Valid subjects: 20/20
+      Overall accuracy: 0.581
+
+LOSO with Logistic Regression (2-class)...
+   s01: 0.500 (32 samples)
+   s02: 0.462 (39 samples)
+   s03: 0.628 (43 samples)
+   s04: 0.643 (14 samples)
+   s05: 0.659 (41 samples)
+   s06: 0.682 (22 samples)
+   s07: 0.538 (39 samples)
+   s08: 0.543 (35 samples)
+   s09: 0.559 (34 samples)
+   s10: 0.500 (48 samples)
+   s11: 0.657 (35 samples)
+   s12: 0.609 (46 samples)
+   s13: 0.679 (28 samples)
+   s14: 0.610 (41 samples)
+   s15: 0.500 (22 samples)
+   s16: 0.588 (34 samples)
+   s17: 0.357 (14 samples)
+   s18: 0.757 (37 samples)
+   s19: 0.794 (34 samples)
+   s20: 0.579 (19 samples)
+
+   Logistic Regression LOSO Results:
+      Mean accuracy: 0.592 ± 0.100
+      Range: [0.357, 0.794]
+      Valid subjects: 20/20
+      Overall accuracy: 0.597
+
+--- LOSO for 3-CLASS CLASSIFICATION ---
+
+Original Rating Distribution:
+   Rating 1.0: 213 samples (32.4%)
+   Rating 3.0: 225 samples (34.2%)
+   Rating 5.0: 219 samples (33.3%)
+
+New Classification (balanced, 3 classes):
+   Low (1-2): 213 samples (32.4%)
+   Medium (3): 225 samples (34.2%)
+   High (4-5): 219 samples (33.3%)
+
+Feature Selection (univariate)...
+   Removed 0 constant features
+   Remaining features: 417
+   Selected 30 features
+   Top 5 features by F-score:
+   - P4_mean: 6.72
+   - F3_temporal_trend: 5.99
+   - F3_beta_peak_freq: 5.79
+   - Fp2_p75: 5.49
+   - O1_mean: 5.11
+
+LOSO with Random Forest (3-class)...
+   s01: 0.438 (32 samples)
+   s02: 0.462 (39 samples)
+   s03: 0.372 (43 samples)
+   s04: 0.357 (14 samples)
+   s05: 0.512 (41 samples)
+   s06: 0.273 (22 samples)
+   s07: 0.385 (39 samples)
+   s08: 0.286 (35 samples)
+   s09: 0.382 (34 samples)
+   s10: 0.333 (48 samples)
+   s11: 0.571 (35 samples)
+   s12: 0.391 (46 samples)
+   s13: 0.321 (28 samples)
+   s14: 0.268 (41 samples)
+   s15: 0.364 (22 samples)
+   s16: 0.324 (34 samples)
+   s17: 0.286 (14 samples)
+   s18: 0.568 (37 samples)
+   s19: 0.353 (34 samples)
+   s20: 0.263 (19 samples)
+
+   Random Forest LOSO Results:
+      Mean accuracy: 0.375 ± 0.091
+      Range: [0.263, 0.571]
+      Valid subjects: 20/20
+      Overall accuracy: 0.385
+
+LOSO with Extra Trees (3-class)...
+   s01: 0.156 (32 samples)
+   s02: 0.410 (39 samples)
+   s03: 0.349 (43 samples)
+   s04: 0.286 (14 samples)
+   s05: 0.463 (41 samples)
+   s06: 0.364 (22 samples)
+   s07: 0.385 (39 samples)
+   s08: 0.229 (35 samples)
+   s09: 0.471 (34 samples)
+   s10: 0.458 (48 samples)
+   s11: 0.543 (35 samples)
+   s12: 0.435 (46 samples)
+   s13: 0.393 (28 samples)
+   s14: 0.317 (41 samples)
+   s15: 0.455 (22 samples)
+   s16: 0.382 (34 samples)
+   s17: 0.286 (14 samples)
+   s18: 0.378 (37 samples)
+   s19: 0.265 (34 samples)
+   s20: 0.368 (19 samples)
+
+   Extra Trees LOSO Results:
+      Mean accuracy: 0.370 ± 0.091
+      Range: [0.156, 0.543]
+      Valid subjects: 20/20
+      Overall accuracy: 0.377
+
+LOSO with SVM (3-class)...
+   s01: 0.344 (32 samples)
+   s02: 0.462 (39 samples)
+   s03: 0.465 (43 samples)
+   s04: 0.429 (14 samples)
+   s05: 0.268 (41 samples)
+   s06: 0.273 (22 samples)
+   s07: 0.359 (39 samples)
+   s08: 0.400 (35 samples)
+   s09: 0.441 (34 samples)
+   s10: 0.396 (48 samples)
+   s11: 0.543 (35 samples)
+   s12: 0.283 (46 samples)
+   s13: 0.357 (28 samples)
+   s14: 0.366 (41 samples)
+   s15: 0.500 (22 samples)
+   s16: 0.353 (34 samples)
+   s17: 0.500 (14 samples)
+   s18: 0.243 (37 samples)
+   s19: 0.324 (34 samples)
+   s20: 0.053 (19 samples)
+
+   SVM LOSO Results:
+      Mean accuracy: 0.368 ± 0.109
+      Range: [0.053, 0.543]
+      Valid subjects: 20/20
+      Overall accuracy: 0.368
+
+LOSO with Logistic Regression (3-class)...
+   s01: 0.375 (32 samples)
+   s02: 0.513 (39 samples)
+   s03: 0.465 (43 samples)
+   s04: 0.429 (14 samples)
+   s05: 0.463 (41 samples)
+   s06: 0.409 (22 samples)
+   s07: 0.205 (39 samples)
+   s08: 0.171 (35 samples)
+   s09: 0.353 (34 samples)
+   s10: 0.396 (48 samples)
+   s11: 0.457 (35 samples)
+   s12: 0.370 (46 samples)
+   s13: 0.393 (28 samples)
+   s14: 0.244 (41 samples)
+   s15: 0.227 (22 samples)
+   s16: 0.412 (34 samples)
+   s17: 0.143 (14 samples)
+   s18: 0.432 (37 samples)
+   s19: 0.441 (34 samples)
+   s20: 0.368 (19 samples)
+
+   Logistic Regression LOSO Results:
+      Mean accuracy: 0.363 ± 0.104
+      Range: [0.143, 0.513]
+      Valid subjects: 20/20
+      Overall accuracy: 0.371
+
+--- LOSO for REGRESSION ---
+
+Feature Selection (univariate)...
+   Removed 0 constant features
+   Remaining features: 417
+   Selected 30 features
+   Top 5 features by F-score:
+   - P4_mean: 6.72
+   - F3_temporal_trend: 5.99
+   - F3_beta_peak_freq: 5.79
+   - Fp2_p75: 5.49
+   - O1_mean: 5.11
+
+LOSO with Random Forest (regression)...
+   s01: R²=0.140, MSE=2.388 (32 samples)
+   s02: R²=-0.092, MSE=2.798 (39 samples)
+   s03: R²=0.090, MSE=2.097 (43 samples)
+   s04: R²=-0.005, MSE=2.973 (14 samples)
+   s05: R²=0.120, MSE=2.145 (41 samples)
+   s06: R²=0.062, MSE=2.209 (22 samples)
+   s07: R²=-0.043, MSE=2.864 (39 samples)
+   s08: R²=-0.035, MSE=2.784 (35 samples)
+   s09: R²=-0.166, MSE=3.294 (34 samples)
+   s10: R²=-0.051, MSE=2.861 (48 samples)
+   s11: R²=-0.013, MSE=2.401 (35 samples)
+   s12: R²=-0.081, MSE=3.000 (46 samples)
+   s13: R²=0.229, MSE=1.967 (28 samples)
+   s14: R²=-0.134, MSE=2.985 (41 samples)
+   s15: R²=-0.094, MSE=3.037 (22 samples)
+   s16: R²=0.038, MSE=2.477 (34 samples)
+   s17: R²=-0.288, MSE=2.945 (14 samples)
+   s18: R²=0.003, MSE=2.243 (37 samples)
+   s19: R²=0.009, MSE=2.674 (34 samples)
+   s20: R²=-0.102, MSE=2.272 (19 samples)
+
+   Random Forest LOSO Results:
+      Mean R²: -0.021 ± 0.114
+      Valid subjects: 20/20
+
+LOSO with SVR (regression)...
+   s01: R²=-0.024, MSE=2.843 (32 samples)
+   s02: R²=-0.131, MSE=2.897 (39 samples)
+   s03: R²=0.143, MSE=1.975 (43 samples)
+   s04: R²=-0.083, MSE=3.205 (14 samples)
+   s05: R²=-0.030, MSE=2.510 (41 samples)
+   s06: R²=-0.021, MSE=2.406 (22 samples)
+   s07: R²=-0.061, MSE=2.914 (39 samples)
+   s08: R²=-0.107, MSE=2.979 (35 samples)
+   s09: R²=-0.005, MSE=2.838 (34 samples)
+   s10: R²=-0.088, MSE=2.961 (48 samples)
+   s11: R²=0.044, MSE=2.265 (35 samples)
+   s12: R²=-0.056, MSE=2.931 (46 samples)
+   s13: R²=-0.086, MSE=2.770 (28 samples)
+   s14: R²=-0.333, MSE=3.507 (41 samples)
+   s15: R²=-0.083, MSE=3.006 (22 samples)
+   s16: R²=-0.016, MSE=2.616 (34 samples)
+   s17: R²=-0.041, MSE=2.380 (14 samples)
+   s18: R²=-0.324, MSE=2.980 (37 samples)
+   s19: R²=-0.121, MSE=3.027 (34 samples)
+   s20: R²=-0.050, MSE=2.163 (19 samples)
+
+   SVR LOSO Results:
+      Mean R²: -0.074 ± 0.104
+      Valid subjects: 20/20
+   Saved comprehensive LOSO visualization plots
+   Saved comprehensive results summary
+
+======================================================================
+FINAL ENHANCED FULL EPOCH EXPERIMENT SUMMARY
+======================================================================
+
+2_CLASS CLASSIFICATION RESULTS:
+--------------------------------------------------
+Random Forest             | Accuracy: 0.803 | F1: 0.795
+SVM                       | Accuracy: 0.758 | F1: 0.764
+Logistic Regression       | Accuracy: 0.614 | F1: 0.626
+Extra Trees               | Accuracy: 0.818 | F1: 0.807
+Linear Discriminant Analysis | Accuracy: 0.682 | F1: 0.645
+KNN                       | Accuracy: 0.712 | F1: 0.710
+
+Best 2_class Classifier: Extra Trees (Accuracy: 0.818)
+
+3_CLASS CLASSIFICATION RESULTS:
+--------------------------------------------------
+Random Forest             | Accuracy: 0.598 | F1: 0.599
+SVM                       | Accuracy: 0.667 | F1: 0.662
+Logistic Regression       | Accuracy: 0.409 | F1: 0.409
+Extra Trees               | Accuracy: 0.629 | F1: 0.625
+Linear Discriminant Analysis | Accuracy: 0.417 | F1: 0.417
+KNN                       | Accuracy: 0.439 | F1: 0.436
+
+Best 3_class Classifier: SVM (Accuracy: 0.667)
+
+REGRESSION RESULTS:
+----------------------------------------
+Random Forest             | R²: 0.205 | MSE: 1.943
+SVR                       | R²: 0.086 | MSE: 2.234
+Ridge                     | R²: -0.102 | MSE: 2.694
+Lasso                     | R²: -0.034 | MSE: 2.527
+
+Best Regressor: Random Forest (R²: 0.205)
+
+COMPREHENSIVE LEAVE-ONE-SUBJECT-OUT (LOSO) VALIDATION:
+------------------------------------------------------------
+
+   2-Class LOSO Results:
+   Random Forest        | Mean: 0.682 ± 0.076 | Overall: 0.676 | Valid: 20/20
+   Extra Trees          | Mean: 0.658 ± 0.071 | Overall: 0.659 | Valid: 20/20
+   SVM                  | Mean: 0.594 ± 0.134 | Overall: 0.581 | Valid: 20/20
+   Logistic Regression  | Mean: 0.592 ± 0.100 | Overall: 0.597 | Valid: 20/20
+   Best 2-Class LOSO: Random Forest (0.682)
+
+   3-Class LOSO Results:
+   Random Forest        | Mean: 0.375 ± 0.091 | Overall: 0.385 | Valid: 20/20
+   Extra Trees          | Mean: 0.370 ± 0.091 | Overall: 0.377 | Valid: 20/20
+   SVM                  | Mean: 0.368 ± 0.109 | Overall: 0.368 | Valid: 20/20
+   Logistic Regression  | Mean: 0.363 ± 0.104 | Overall: 0.371 | Valid: 20/20
+   Best 3-Class LOSO: Random Forest (0.375)
+
+   Regression LOSO Results:
+   Random Forest        | Mean R²: -0.021 ± 0.114 | Valid: 20/20
+   SVR                  | Mean R²: -0.074 ± 0.104 | Valid: 20/20
+
+======================================================================
+COMPARISON: FULL EPOCHS vs 10-SECOND EPOCHS
+======================================================================
+
+EXPECTED DIFFERENCES:
+----------------------------------------
+Full Epochs:
+  Captures complete song response
+  Better for sustained preference patterns
+  Less noisy (longer integration time)
+  Fewer training samples
+  Less suitable for temporal dynamics
+
+10-Second Epochs:
+  More training samples (8x more)
+  Better for machine learning
+  Captures temporal dynamics
+  May miss sustained patterns
+  Potentially more noisy
+
+RECOMMENDATIONS:
+----------------------------------------
+Use FULL EPOCHS for:
+  - Understanding sustained neural responses
+  - Analyzing complete song preferences
+  - Studying long-term EEG patterns
+Use 10S EPOCHS for:
+  - Training robust ML models
+  - Real-time applications
+  - Temporal pattern analysis
+
+All enhanced full epoch experiments with comprehensive LOSO complete! (Total time: 100.5s)
+Results saved to '/home/anower/All/Python/Thesis_VS_code/full_epoch/emon/ml_experiment_comprehensive_loso_full.pkl'
+Enhanced visualizations saved to '/home/anower/All/Python/Thesis_VS_code/full_epoch/emon/'
+
+======================================================================
+FINAL INSIGHTS: ENHANCED FULL EPOCH WITH COMPREHENSIVE LOSO
+======================================================================
+
+BEST PERFORMANCE:
+   2_class: 81.8% (Extra Trees)
+   3_class: 66.7% (SVM)
+   Regression: R² = 0.205 (Random Forest)
+   2-Class LOSO: 68.2% (Random Forest)
+   3-Class LOSO: 37.5% (Random Forest)
+
+NEW COMPREHENSIVE LOSO FEATURES:
+   Multiple classifiers tested in LOSO framework
+   Both 2-class and 3-class LOSO validation
+   Regression LOSO validation included
+   Per-subject performance analysis
+   Subject-wise performance heatmaps
+   Statistical significance testing across subjects
+
+NEW VISUALIZATIONS CREATED:
+   comprehensive_loso_results.png - Overview of all LOSO results
+   loso_heatmap_2class.png - Subject x Classifier performance matrix
+   Enhanced confusion matrices for all classifiers
+   Feature importance plots for tree models
+   Comprehensive results summary dashboard
+
+RESEARCH SIGNIFICANCE:
+   Comprehensive LOSO provides robust cross-subject validation
+   Multiple model comparison ensures reliable results
+   Subject-specific analysis reveals individual differences
+   Enhanced visualizations improve thesis presentation quality
+   Statistical rigor meets publication standards
+
+LOSO VALIDATION INSIGHTS:
+   LOSO accuracy of 68.2% suggests good generalization
+   Low standard deviation (0.076) shows consistent performance
+
+COMPARISON WITH STANDARD VALIDATION:
+   Standard validation: 81.8%
+   LOSO validation: 68.2%
+   Difference: 13.6%
+   Large gap suggests potential overfitting to subject-specific patterns
+

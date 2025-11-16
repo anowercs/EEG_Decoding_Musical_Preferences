@@ -1,0 +1,16 @@
+
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+
+Loading music_listening_experiment_s01.mat...
+Keys in file: ['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings']
+EEG_Songs shape: (10240, 14, 30)
+Sampling Rate (Fs): [[128.]]
+Song Ratings shape: (30, 1)
+
+Data structure for the first file:
+#refs#: <class 'dict'>, shape: N/A
+EEG_Rest: <class 'numpy.ndarray'>, shape: (8960, 14)
+EEG_Songs: <class 'numpy.ndarray'>, shape: (10240, 14, 30)
+Fs: <class 'numpy.ndarray'>, shape: (1, 1)
+sensor_info: <class 'dict'>, shape: N/A
+song_ratings: <class 'numpy.ndarray'>, shape: (30, 1)

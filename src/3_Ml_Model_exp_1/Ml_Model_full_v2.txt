@@ -1,0 +1,108 @@
+anower@anower-P453UJ:~/All/Python/Thesis_VS_code$ /usr/bin/python3 /home/anower/All/Python/Thesis_VS_code/full_epoch/3_Ml_Model/3_2_ML_Model_Full.py
+======================================================================
+EXPERIMENT 1: TRADITIONAL MACHINE LEARNING (FULL-SONG EPOCHS)
+======================================================================
+✅ Data loaded successfully!
+   Feature matrix shape: (439, 417)
+   Ratings shape: (439,)
+   Rating range: [1.0, 5.0]
+   Rating mean: 3.04 ± 1.63
+   Rating dtype: float64
+
+============================================================
+CLASSIFICATION EXPERIMENT
+============================================================
+
+📊 Rating Classification (quantile, 3 classes):
+   Low: 142 samples (32.3%)
+   Medium: 146 samples (33.3%)
+   High: 151 samples (34.4%)
+
+🔍 Feature Selection...
+   Selected top 30 features
+   Top 5 features by F-score:
+   - P3_mean: 4.70
+   - P4_mean: 4.20
+   - F7_mean: 4.18
+   - T4_var: 4.16
+   - T4_std: 4.08
+
+🤖 Training SVM...
+   Best parameters: {'C': 1, 'gamma': 'auto'}
+   CV Accuracy: 0.365 ± 0.025
+   Test Accuracy: 0.432
+
+🤖 Training Random Forest...
+   Best parameters: {'max_depth': 5, 'n_estimators': 200}
+   CV Accuracy: 0.362 ± 0.037
+   Test Accuracy: 0.364
+
+🤖 Training KNN...
+   Best parameters: {'n_neighbors': 3}
+   CV Accuracy: 0.359 ± 0.034
+   Test Accuracy: 0.307
+
+🤖 Training Logistic Regression...
+   Best parameters: {'C': 1}
+   CV Accuracy: 0.362 ± 0.023
+   Test Accuracy: 0.420
+
+============================================================
+REGRESSION EXPERIMENT
+============================================================
+
+🔍 Feature Selection...
+   Selected top 30 features
+   Top 5 features by F-score:
+   - Fp1_kurtosis: 6.75
+   - T4_ptp: 5.48
+   - P3_gamma_peak_freq: 4.97
+   - F3_beta_peak_freq: 4.64
+   - Fp1_ptp: 3.90
+
+🤖 Training SVR...
+   Train MSE: 1.652, R²: 0.385
+   Test MSE: 3.256, R²: -0.257
+
+🤖 Training Random Forest...
+   Train MSE: 0.384, R²: 0.857
+   Test MSE: 3.156, R²: -0.218
+
+============================================================
+CROSS-SUBJECT VALIDATION
+============================================================
+
+📊 Rating Classification (quantile, 3 classes):
+   Low: 142 samples (32.3%)
+   Medium: 146 samples (33.3%)
+   High: 151 samples (34.4%)
+
+🔄 Leave-one-subject-out validation...
+   s01: 0.450
+   s02: 0.333
+   s03: 0.370
+   s04: 0.300
+   s05: 0.370
+   s06: 0.467
+   s07: 0.346
+   s08: 0.375
+   s09: 0.280
+   s10: 0.345
+   s11: 0.435
+   s12: 0.433
+   s13: 0.500
+   s14: 0.240
+   s15: 0.294
+   s16: 0.444
+   s17: 0.200
+   s18: 0.360
+   s19: 0.409
+   s20: 0.083
+
+📊 Cross-subject performance:
+   Mean accuracy: 0.352
+   Std accuracy: 0.098
+   Min accuracy: 0.083
+   Max accuracy: 0.500
+
+✅ All experiments complete! Results saved to 'ml_experiment1_full.pkl'

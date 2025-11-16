@@ -1,0 +1,1499 @@
+anower@anower-P453UJ:~/All/Python/Thesis_VS_code$ /usr/bin/python3 /home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/2_1_bandpass_artifect_z_score_norma.py
+============================================================
+STEP 1: LOADING AND BANDPASS FILTERING
+============================================================
+
+Loading music_listening_experiment_s01.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s01 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s01_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s01, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 15.223 μV
+Filtered Signal - RMS: 14.751 μV
+Removed Components - RMS: 1.529 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 56.0%
+Theta (4-8 Hz): 13.6%
+Alpha (8-13 Hz): 6.3%
+Beta (13-30 Hz): 17.7%
+Gamma (30-100 Hz): 6.5%
+
+Loading music_listening_experiment_s02.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s02 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s02_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s02, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 8.023 μV
+Filtered Signal - RMS: 7.853 μV
+Removed Components - RMS: 0.778 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 50.6%
+Theta (4-8 Hz): 18.8%
+Alpha (8-13 Hz): 15.5%
+Beta (13-30 Hz): 12.6%
+Gamma (30-100 Hz): 2.8%
+
+Loading music_listening_experiment_s03.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s03 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s03_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s03, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 13.096 μV
+Filtered Signal - RMS: 12.756 μV
+Removed Components - RMS: 1.298 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 28.5%
+Theta (4-8 Hz): 14.4%
+Alpha (8-13 Hz): 14.1%
+Beta (13-30 Hz): 29.4%
+Gamma (30-100 Hz): 13.8%
+
+Loading music_listening_experiment_s04.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s04 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s04_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s04, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 20.367 μV
+Filtered Signal - RMS: 19.497 μV
+Removed Components - RMS: 2.403 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 72.1%
+Theta (4-8 Hz): 8.8%
+Alpha (8-13 Hz): 4.7%
+Beta (13-30 Hz): 10.5%
+Gamma (30-100 Hz): 3.9%
+
+Loading music_listening_experiment_s05.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s05 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s05_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s05, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 11.397 μV
+Filtered Signal - RMS: 11.154 μV
+Removed Components - RMS: 0.858 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 52.5%
+Theta (4-8 Hz): 18.4%
+Alpha (8-13 Hz): 9.7%
+Beta (13-30 Hz): 14.7%
+Gamma (30-100 Hz): 4.7%
+
+Loading music_listening_experiment_s06.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s06 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s06_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s06, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 15.710 μV
+Filtered Signal - RMS: 15.185 μV
+Removed Components - RMS: 1.673 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 55.5%
+Theta (4-8 Hz): 14.8%
+Alpha (8-13 Hz): 11.3%
+Beta (13-30 Hz): 14.8%
+Gamma (30-100 Hz): 3.8%
+
+Loading music_listening_experiment_s07.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s07 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s07_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s07, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 14.332 μV
+Filtered Signal - RMS: 13.974 μV
+Removed Components - RMS: 1.320 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 58.7%
+Theta (4-8 Hz): 18.5%
+Alpha (8-13 Hz): 9.7%
+Beta (13-30 Hz): 10.6%
+Gamma (30-100 Hz): 2.6%
+
+Loading music_listening_experiment_s08.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s08 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s08_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s08, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 20.997 μV
+Filtered Signal - RMS: 20.270 μV
+Removed Components - RMS: 1.852 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 69.5%
+Theta (4-8 Hz): 13.3%
+Alpha (8-13 Hz): 8.0%
+Beta (13-30 Hz): 7.2%
+Gamma (30-100 Hz): 1.9%
+
+Loading music_listening_experiment_s09.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s09 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s09_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s09, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 9.556 μV
+Filtered Signal - RMS: 9.314 μV
+Removed Components - RMS: 0.876 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 54.4%
+Theta (4-8 Hz): 18.8%
+Alpha (8-13 Hz): 10.1%
+Beta (13-30 Hz): 12.4%
+Gamma (30-100 Hz): 4.5%
+
+Loading music_listening_experiment_s10.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s10 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s10_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s10, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 9.673 μV
+Filtered Signal - RMS: 9.518 μV
+Removed Components - RMS: 0.752 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 32.8%
+Theta (4-8 Hz): 14.2%
+Alpha (8-13 Hz): 30.9%
+Beta (13-30 Hz): 17.6%
+Gamma (30-100 Hz): 4.7%
+
+Loading music_listening_experiment_s11.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s11 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s11_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s11, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 12.761 μV
+Filtered Signal - RMS: 12.483 μV
+Removed Components - RMS: 1.298 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 40.5%
+Theta (4-8 Hz): 13.1%
+Alpha (8-13 Hz): 30.0%
+Beta (13-30 Hz): 13.4%
+Gamma (30-100 Hz): 3.2%
+
+Loading music_listening_experiment_s12.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s12 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s12_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s12, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 9.389 μV
+Filtered Signal - RMS: 9.148 μV
+Removed Components - RMS: 0.913 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 33.0%
+Theta (4-8 Hz): 16.1%
+Alpha (8-13 Hz): 9.3%
+Beta (13-30 Hz): 30.5%
+Gamma (30-100 Hz): 11.1%
+
+Loading music_listening_experiment_s13.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s13 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s13_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s13, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 12.451 μV
+Filtered Signal - RMS: 12.150 μV
+Removed Components - RMS: 1.142 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 31.1%
+Theta (4-8 Hz): 20.8%
+Alpha (8-13 Hz): 15.8%
+Beta (13-30 Hz): 25.2%
+Gamma (30-100 Hz): 7.1%
+
+Loading music_listening_experiment_s14.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s14 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s14_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s14, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 15.250 μV
+Filtered Signal - RMS: 14.639 μV
+Removed Components - RMS: 1.828 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 57.1%
+Theta (4-8 Hz): 10.1%
+Alpha (8-13 Hz): 7.3%
+Beta (13-30 Hz): 17.6%
+Gamma (30-100 Hz): 8.0%
+
+Loading music_listening_experiment_s15.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s15 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s15_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s15, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 11.354 μV
+Filtered Signal - RMS: 11.053 μV
+Removed Components - RMS: 1.107 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 33.0%
+Theta (4-8 Hz): 27.2%
+Alpha (8-13 Hz): 13.5%
+Beta (13-30 Hz): 19.4%
+Gamma (30-100 Hz): 7.1%
+
+Loading music_listening_experiment_s16.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s16 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s16_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s16, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 15.248 μV
+Filtered Signal - RMS: 14.833 μV
+Removed Components - RMS: 1.419 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 58.6%
+Theta (4-8 Hz): 20.8%
+Alpha (8-13 Hz): 10.5%
+Beta (13-30 Hz): 7.8%
+Gamma (30-100 Hz): 2.3%
+
+Loading music_listening_experiment_s20.mat...
+Keys in MAT file: dict_keys(['#refs#', 'EEG_Rest', 'EEG_Songs', 'Fs', 'sensor_info', 'song_ratings'])
+Sampling frequency: 128 Hz
+Transposed EEG_Songs data to shape: (30, 14, 10240)
+Original EEG_Songs shape: (30, 14, 10240)
+Successfully filtered EEG_Songs: shape (30, 14, 10240)
+Transposed EEG_Rest data to shape: (14, 8960)
+Original EEG_Rest shape: (14, 8960)
+Successfully filtered EEG_Rest: shape (14, 8960)
+
+🎵 Visualizing bandpass filter effects for s20 (EEG_Songs)...
+Filter effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_bandpass_filter_effects_s20_ch0_trial0.png'
+
+=== Filter Effects Summary ===
+Subject: s20, Channel: 0, Trial: 0
+Sampling Rate: 128 Hz
+Signal Duration: 79.99 seconds
+Original Signal - RMS: 22.199 μV
+Filtered Signal - RMS: 21.678 μV
+Removed Components - RMS: 1.904 μV
+
+=== Power Distribution (Original Signal) ===
+Delta (0.5-4 Hz): 68.4%
+Theta (4-8 Hz): 14.9%
+Alpha (8-13 Hz): 6.5%
+Beta (13-30 Hz): 7.8%
+Gamma (30-100 Hz): 2.5%
+
+============================================================
+STEP 2: ARTIFACT REMOVAL AND NORMALIZATION (EEG_Songs)
+============================================================
+
+==================== Processing s01 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 10/30
+- Bad channels: 0/14
+- Amplitude violations: 10
+- Variance violations: 2
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 10 bad trials
+Removed 0 bad channels
+Clean data shape: (20, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-99.932, 97.789]
+Normalized data range: [-13.965, 12.990]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s01 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s01_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.014, Std: 14.751
+Clean Signal     - Mean: -0.000, Std: 16.492
+Normalized Signal- Mean: 0.000, Std: 1.348
+✅ s01 processing complete!
+
+==================== Processing s02 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 3/30
+- Bad channels: 0/14
+- Amplitude violations: 3
+- Variance violations: 8
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 3 bad trials
+Removed 0 bad channels
+Clean data shape: (27, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-87.342, 87.503]
+Normalized data range: [-17.790, 10.510]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s02 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s02_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.005, Std: 7.853
+Clean Signal     - Mean: -0.005, Std: 7.853
+Normalized Signal- Mean: 0.000, Std: 0.945
+✅ s02 processing complete!
+
+==================== Processing s03 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 3/30
+- Bad channels: 0/14
+- Amplitude violations: 2
+- Variance violations: 1
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 3 bad trials
+Removed 0 bad channels
+Clean data shape: (27, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-65.683, 77.715]
+Normalized data range: [-11.083, 10.566]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s03 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s03_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: 0.003, Std: 12.756
+Clean Signal     - Mean: 0.003, Std: 12.756
+Normalized Signal- Mean: 0.000, Std: 1.067
+✅ s03 processing complete!
+
+==================== Processing s04 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 20/30
+- Bad channels: 0/14
+- Amplitude violations: 20
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 20 bad trials
+Removed 0 bad channels
+Clean data shape: (10, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-90.718, 99.833]
+Normalized data range: [-12.848, 12.310]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s04 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s04_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: 0.002, Std: 19.497
+Clean Signal     - Mean: -0.006, Std: 11.633
+Normalized Signal- Mean: -0.000, Std: 0.854
+✅ s04 processing complete!
+
+==================== Processing s05 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 3/30
+- Bad channels: 0/14
+- Amplitude violations: 3
+- Variance violations: 1
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 3 bad trials
+Removed 0 bad channels
+Clean data shape: (27, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-99.277, 82.911]
+Normalized data range: [-9.871, 10.176]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s05 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s05_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.016, Std: 11.154
+Clean Signal     - Mean: -0.016, Std: 11.154
+Normalized Signal- Mean: -0.002, Std: 1.034
+✅ s05 processing complete!
+
+==================== Processing s06 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 15/30
+- Bad channels: 0/14
+- Amplitude violations: 15
+- Variance violations: 5
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 15 bad trials
+Removed 0 bad channels
+Clean data shape: (15, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-97.781, 91.071]
+Normalized data range: [-10.068, 8.085]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s06 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s06_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.017, Std: 15.185
+Clean Signal     - Mean: -0.017, Std: 15.185
+Normalized Signal- Mean: -0.001, Std: 1.088
+✅ s06 processing complete!
+
+==================== Processing s07 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 4/30
+- Bad channels: 0/14
+- Amplitude violations: 4
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 4 bad trials
+Removed 0 bad channels
+Clean data shape: (26, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-98.179, 91.127]
+Normalized data range: [-9.870, 10.340]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s07 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s07_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: 0.011, Std: 13.974
+Clean Signal     - Mean: -0.017, Std: 11.126
+Normalized Signal- Mean: -0.001, Std: 1.117
+✅ s07 processing complete!
+
+==================== Processing s08 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 6/30
+- Bad channels: 0/14
+- Amplitude violations: 6
+- Variance violations: 1
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 6 bad trials
+Removed 0 bad channels
+Clean data shape: (24, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-98.831, 96.466]
+Normalized data range: [-8.055, 7.220]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s08 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s08_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: 0.021, Std: 20.270
+Clean Signal     - Mean: 0.002, Std: 20.377
+Normalized Signal- Mean: 0.001, Std: 1.319
+✅ s08 processing complete!
+
+==================== Processing s09 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 5/30
+- Bad channels: 0/14
+- Amplitude violations: 5
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 5 bad trials
+Removed 0 bad channels
+Clean data shape: (25, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-98.816, 88.993]
+Normalized data range: [-11.807, 10.021]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s09 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s09_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.006, Std: 9.314
+Clean Signal     - Mean: -0.005, Std: 9.847
+Normalized Signal- Mean: -0.001, Std: 1.162
+✅ s09 processing complete!
+
+==================== Processing s10 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 1/30
+- Bad channels: 0/14
+- Amplitude violations: 1
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 1 bad trials
+Removed 0 bad channels
+Clean data shape: (29, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-93.849, 81.212]
+Normalized data range: [-10.923, 11.360]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s10 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s10_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.011, Std: 9.518
+Clean Signal     - Mean: -0.011, Std: 9.518
+Normalized Signal- Mean: -0.000, Std: 0.890
+✅ s10 processing complete!
+
+==================== Processing s11 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 7/30
+- Bad channels: 0/14
+- Amplitude violations: 7
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 7 bad trials
+Removed 0 bad channels
+Clean data shape: (23, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-89.446, 95.634]
+Normalized data range: [-10.325, 7.255]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s11 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s11_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.031, Std: 12.483
+Clean Signal     - Mean: 0.011, Std: 12.169
+Normalized Signal- Mean: 0.001, Std: 0.993
+✅ s11 processing complete!
+
+==================== Processing s12 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 0/30
+- Bad channels: 0/14
+- Amplitude violations: 0
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 0 bad trials
+Removed 0 bad channels
+Clean data shape: (30, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-80.968, 81.547]
+Normalized data range: [-10.045, 11.591]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s12 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s12_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.001, Std: 9.148
+Clean Signal     - Mean: -0.001, Std: 9.148
+Normalized Signal- Mean: -0.000, Std: 0.839
+✅ s12 processing complete!
+
+==================== Processing s13 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 12/30
+- Bad channels: 0/14
+- Amplitude violations: 12
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 12 bad trials
+Removed 0 bad channels
+Clean data shape: (18, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-99.109, 93.349]
+Normalized data range: [-10.406, 10.947]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s13 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s13_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.001, Std: 12.150
+Clean Signal     - Mean: -0.001, Std: 12.150
+Normalized Signal- Mean: -0.000, Std: 1.004
+✅ s13 processing complete!
+
+==================== Processing s14 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 5/30
+- Bad channels: 0/14
+- Amplitude violations: 5
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 5 bad trials
+Removed 0 bad channels
+Clean data shape: (25, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-91.983, 92.319]
+Normalized data range: [-11.103, 11.144]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s14 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s14_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.008, Std: 14.639
+Clean Signal     - Mean: -0.008, Std: 14.639
+Normalized Signal- Mean: -0.000, Std: 1.114
+✅ s14 processing complete!
+
+==================== Processing s15 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 13/30
+- Bad channels: 0/14
+- Amplitude violations: 13
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 13 bad trials
+Removed 0 bad channels
+Clean data shape: (17, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-85.324, 85.525]
+Normalized data range: [-9.479, 10.482]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s15 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s15_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.006, Std: 11.053
+Clean Signal     - Mean: -0.006, Std: 11.053
+Normalized Signal- Mean: -0.000, Std: 0.906
+✅ s15 processing complete!
+
+==================== Processing s16 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 3/30
+- Bad channels: 0/14
+- Amplitude violations: 3
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 3 bad trials
+Removed 0 bad channels
+Clean data shape: (27, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-95.372, 93.271]
+Normalized data range: [-10.016, 9.420]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s16 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s16_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.024, Std: 14.833
+Clean Signal     - Mean: -0.024, Std: 14.833
+Normalized Signal- Mean: -0.002, Std: 1.277
+✅ s16 processing complete!
+
+==================== Processing s17 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 20/30
+- Bad channels: 0/14
+- Amplitude violations: 20
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 20 bad trials
+Removed 0 bad channels
+Clean data shape: (10, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-99.163, 96.506]
+Normalized data range: [-6.608, 6.878]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s17 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s17_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.011, Std: 16.224
+Clean Signal     - Mean: 0.010, Std: 11.592
+Normalized Signal- Mean: 0.000, Std: 0.663
+✅ s17 processing complete!
+
+==================== Processing s18 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 5/30
+- Bad channels: 0/14
+- Amplitude violations: 5
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 5 bad trials
+Removed 0 bad channels
+Clean data shape: (25, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-95.170, 93.177]
+Normalized data range: [-8.988, 8.104]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s18 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s18_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: 0.005, Std: 11.604
+Clean Signal     - Mean: 0.005, Std: 11.604
+Normalized Signal- Mean: 0.001, Std: 1.015
+✅ s18 processing complete!
+
+==================== Processing s19 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 8/30
+- Bad channels: 0/14
+- Amplitude violations: 8
+- Variance violations: 3
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 8 bad trials
+Removed 0 bad channels
+Clean data shape: (22, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-81.460, 93.477]
+Normalized data range: [-6.431, 7.000]
+Normalized data mean: -0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s19 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s19_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.009, Std: 14.551
+Clean Signal     - Mean: -0.016, Std: 11.453
+Normalized Signal- Mean: -0.001, Std: 0.961
+✅ s19 processing complete!
+
+==================== Processing s20 (EEG_Songs) ====================
+Processing EEG_Songs data: (30, 14, 10240)
+=== Artifact Detection ===
+1. Checking amplitude threshold (±100 μV)...
+2. Checking variance outliers...
+3. Checking for flat channels...
+4. Checking for muscle artifacts (high frequency content)...
+
+Artifact Detection Results:
+- Bad trials: 18/30
+- Bad channels: 0/14
+- Amplitude violations: 18
+- Variance violations: 0
+- Flat channels: 0
+
+=== Artifact Removal (method: remove) ===
+Removed 18 bad trials
+Removed 0 bad channels
+Clean data shape: (12, 14, 10240)
+
+=== Signal Normalization (method: z_score, axis: channel) ===
+Original data range: [-98.675, 98.473]
+Normalized data range: [-8.455, 8.939]
+Normalized data mean: 0.000
+Normalized data std: 1.000
+
+🎵 Visualizing preprocessing effects for s20 (EEG_Songs)...
+Preprocessing effects plot saved as '/home/anower/All/Python/Thesis_VS_code/full_epoch/2_Data_preprocessing/Figure/2.1_eeg_preprocessing_effects_s20_ch0_trial0.png'
+
+=== Signal Statistics Comparison ===
+Original Signal  - Mean: -0.009, Std: 21.678
+Clean Signal     - Mean: -0.005, Std: 15.496
+Normalized Signal- Mean: -0.000, Std: 1.044
+✅ s20 processing complete!
+✅ Processed data saved to '/home/anower/All/Python/Thesis_VS_code/full_epoch/Data/Data_processed/processed_eeg_data_full.pkl'
+
+==================== PROCESSING SUMMARY ====================
+Subjects processed: 20
+Total trials removed (EEG_Songs): 161
+Total channels removed (EEG_Songs): 0
+Average data retention (EEG_Songs): 73.2%
+
+==================================================
+DETAILED PROCESSING SUMMARY (EEG_Songs)
+==================================================
+
+s01:
+  Original shape: (30, 14, 10240)
+  Final shape: (20, 14, 10240)
+  Trials removed: 10
+  Channels removed: 0
+  Data retention: 66.7%
+
+s02:
+  Original shape: (30, 14, 10240)
+  Final shape: (27, 14, 10240)
+  Trials removed: 3
+  Channels removed: 0
+  Data retention: 90.0%
+
+s03:
+  Original shape: (30, 14, 10240)
+  Final shape: (27, 14, 10240)
+  Trials removed: 3
+  Channels removed: 0
+  Data retention: 90.0%
+
+s04:
+  Original shape: (30, 14, 10240)
+  Final shape: (10, 14, 10240)
+  Trials removed: 20
+  Channels removed: 0
+  Data retention: 33.3%
+
+s05:
+  Original shape: (30, 14, 10240)
+  Final shape: (27, 14, 10240)
+  Trials removed: 3
+  Channels removed: 0
+  Data retention: 90.0%
+
+s06:
+  Original shape: (30, 14, 10240)
+  Final shape: (15, 14, 10240)
+  Trials removed: 15
+  Channels removed: 0
+  Data retention: 50.0%
+
+s07:
+  Original shape: (30, 14, 10240)
+  Final shape: (26, 14, 10240)
+  Trials removed: 4
+  Channels removed: 0
+  Data retention: 86.7%
+
+s08:
+  Original shape: (30, 14, 10240)
+  Final shape: (24, 14, 10240)
+  Trials removed: 6
+  Channels removed: 0
+  Data retention: 80.0%
+
+s09:
+  Original shape: (30, 14, 10240)
+  Final shape: (25, 14, 10240)
+  Trials removed: 5
+  Channels removed: 0
+  Data retention: 83.3%
+
+s10:
+  Original shape: (30, 14, 10240)
+  Final shape: (29, 14, 10240)
+  Trials removed: 1
+  Channels removed: 0
+  Data retention: 96.7%
+
+s11:
+  Original shape: (30, 14, 10240)
+  Final shape: (23, 14, 10240)
+  Trials removed: 7
+  Channels removed: 0
+  Data retention: 76.7%
+
+s12:
+  Original shape: (30, 14, 10240)
+  Final shape: (30, 14, 10240)
+  Trials removed: 0
+  Channels removed: 0
+  Data retention: 100.0%
+
+s13:
+  Original shape: (30, 14, 10240)
+  Final shape: (18, 14, 10240)
+  Trials removed: 12
+  Channels removed: 0
+  Data retention: 60.0%
+
+s14:
+  Original shape: (30, 14, 10240)
+  Final shape: (25, 14, 10240)
+  Trials removed: 5
+  Channels removed: 0
+  Data retention: 83.3%
+
+s15:
+  Original shape: (30, 14, 10240)
+  Final shape: (17, 14, 10240)
+  Trials removed: 13
+  Channels removed: 0
+  Data retention: 56.7%
+
+s16:
+  Original shape: (30, 14, 10240)
+  Final shape: (27, 14, 10240)
+  Trials removed: 3
+  Channels removed: 0
+  Data retention: 90.0%
+
+s17:
+  Original shape: (30, 14, 10240)
+  Final shape: (10, 14, 10240)
+  Trials removed: 20
+  Channels removed: 0
+  Data retention: 33.3%
+
+s18:
+  Original shape: (30, 14, 10240)
+  Final shape: (25, 14, 10240)
+  Trials removed: 5
+  Channels removed: 0
+  Data retention: 83.3%
+
+s19:
+  Original shape: (30, 14, 10240)
+  Final shape: (22, 14, 10240)
+  Trials removed: 8
+  Channels removed: 0
+  Data retention: 73.3%
+
+s20:
+  Original shape: (30, 14, 10240)
+  Final shape: (12, 14, 10240)
+  Trials removed: 18
+  Channels removed: 0
+  Data retention: 40.0%
+
+==================================================
+EEG DATA SUMMARY
+==================================================
+
+s01:
+  EEG_Songs (clean): (20, 14, 10240)
+  EEG_Songs (normalized): (20, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s02:
+  EEG_Songs (clean): (27, 14, 10240)
+  EEG_Songs (normalized): (27, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s03:
+  EEG_Songs (clean): (27, 14, 10240)
+  EEG_Songs (normalized): (27, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s04:
+  EEG_Songs (clean): (10, 14, 10240)
+  EEG_Songs (normalized): (10, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s05:
+  EEG_Songs (clean): (27, 14, 10240)
+  EEG_Songs (normalized): (27, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s06:
+  EEG_Songs (clean): (15, 14, 10240)
+  EEG_Songs (normalized): (15, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s07:
+  EEG_Songs (clean): (26, 14, 10240)
+  EEG_Songs (normalized): (26, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s08:
+  EEG_Songs (clean): (24, 14, 10240)
+  EEG_Songs (normalized): (24, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s09:
+  EEG_Songs (clean): (25, 14, 10240)
+  EEG_Songs (normalized): (25, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s10:
+  EEG_Songs (clean): (29, 14, 10240)
+  EEG_Songs (normalized): (29, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s11:
+  EEG_Songs (clean): (23, 14, 10240)
+  EEG_Songs (normalized): (23, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s12:
+  EEG_Songs (clean): (30, 14, 10240)
+  EEG_Songs (normalized): (30, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s13:
+  EEG_Songs (clean): (18, 14, 10240)
+  EEG_Songs (normalized): (18, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s14:
+  EEG_Songs (clean): (25, 14, 10240)
+  EEG_Songs (normalized): (25, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s15:
+  EEG_Songs (clean): (17, 14, 10240)
+  EEG_Songs (normalized): (17, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s16:
+  EEG_Songs (clean): (27, 14, 10240)
+  EEG_Songs (normalized): (27, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s17:
+  EEG_Songs (clean): (10, 14, 10240)
+  EEG_Songs (normalized): (10, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s18:
+  EEG_Songs (clean): (25, 14, 10240)
+  EEG_Songs (normalized): (25, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s19:
+  EEG_Songs (clean): (22, 14, 10240)
+  EEG_Songs (normalized): (22, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+s20:
+  EEG_Songs (clean): (12, 14, 10240)
+  EEG_Songs (normalized): (12, 14, 10240)
+  EEG_Rest (filtered): (14, 8960)
+  Sampling rate: 128 Hz
+  Song ratings: (30, 1)
+
+==================================================
+HOW TO ACCESS YOUR PROCESSED DATA
+==================================================
+Your processed data is now available in 'processed_data_all_subjects' dictionary:
+- processed_data_all_subjects[subject_id]['EEG_Songs_clean']      # After artifact removal
+- processed_data_all_subjects[subject_id]['EEG_Songs_normalized'] # Final normalized data
+- processed_data_all_subjects[subject_id]['EEG_Rest']             # Filtered rest data
+- processed_data_all_subjects[subject_id]['bad_trials']           # Which trials were removed (EEG_Songs)
+- processed_data_all_subjects[subject_id]['bad_channels']         # Which channels were removed (EEG_Songs)
+- processed_data_all_subjects[subject_id]['channel_map']          # Channel mapping after removal (EEG_Songs)
+- processed_data_all_subjects[subject_id]['Fs']                   # Sampling rate
+- processed_data_all_subjects[subject_id]['song_ratings']         # Song ratings
+
+Example - Final processed EEG_Songs data for s01:
+Shape: (20, 14, 10240)
+Mean: 0.000000 (should be ~0 for z-score)
+Std: 1.000000 (should be ~1 for z-score)
+Range: [-13.965, 12.990]
+

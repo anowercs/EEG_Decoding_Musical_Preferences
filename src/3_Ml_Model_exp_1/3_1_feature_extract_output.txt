@@ -1,0 +1,123 @@
+anower@anower-P453UJ:~/All/Python/Thesis_VS_code$ /usr/bin/python3 /home/anower/All/Python/Thesis_VS_code/full_epoch/3_Ml_Model/3_1_Feature_Extraction_Full.py
+======================================================================
+STEP 3.1: FEATURE EXTRACTION (FULL-SONG EPOCHS)
+======================================================================
+Loading epoched data...
+Loading processed data for bad_trials...
+
+Extracting features from 20 subjects...
+  0%|                                                                                                                                                          | 0/20 [00:00<?, ?it/s]Warning: Truncating song_labels for s01 from 30 to 20
+s01: 20 epochs, 20 labels, bad_trials=[ True False  True  True  True False  True False  True False  True False
+  True False  True False False False False False False  True False False
+ False False False False False False], kept_indices=[1, 5, 7, 9, 11, 13, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29]
+  5%|███████▏                                                                                                                                       | 1/20 [15:09<4:47:54, 909.18s/it]Warning: Truncating song_labels for s02 from 30 to 27                                                                                                                                 
+s02: 27 epochs, 27 labels, bad_trials=[False False  True  True False  True False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False], kept_indices=[0, 1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 10%|██████████████▏                                                                                                                               | 2/20 [33:58<5:11:31, 1038.40s/it]Warning: Truncating song_labels for s03 from 30 to 27                                                                                                                                 
+s03: 27 epochs, 27 labels, bad_trials=[False False False False False False  True False False False False False
+ False False False False  True  True False False False False False False
+ False False False False False False], kept_indices=[0, 1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 15%|█████████████████████▎                                                                                                                        | 3/20 [52:38<5:04:48, 1075.79s/it]Warning: Truncating song_labels for s04 from 30 to 10                                                                                                                                 
+s04: 10 epochs, 10 labels, bad_trials=[ True  True False  True False  True  True  True  True  True  True False
+  True False False False  True False  True  True  True  True  True False
+ False  True  True  True False  True], kept_indices=[2, 4, 11, 13, 14, 15, 17, 23, 24, 28]
+ 20%|████████████████████████████▌                                                                                                                  | 4/20 [58:42<3:32:00, 795.04s/it]Warning: Truncating song_labels for s05 from 30 to 27                                                                                                                                 
+s05: 27 epochs, 27 labels, bad_trials=[False False False False False False False False False  True False False
+ False False False False False False False  True  True False False False
+ False False False False False False], kept_indices=[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 25%|███████████████████████████████████▎                                                                                                         | 5/20 [1:16:55<3:45:34, 902.31s/it]Warning: Truncating song_labels for s06 from 30 to 15                                                                                                                                 
+s06: 15 epochs, 15 labels, bad_trials=[False  True  True  True  True  True  True  True False False False False
+ False False False False False False  True  True  True  True  True False
+  True  True False False  True False], kept_indices=[0, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 23, 26, 27, 29]
+ 30%|██████████████████████████████████████████▎                                                                                                  | 6/20 [1:26:16<3:03:26, 786.19s/it]Warning: Truncating song_labels for s07 from 30 to 26                                                                                                                                 
+s07: 26 epochs, 26 labels, bad_trials=[ True  True  True  True False False False False False False False False
+ False False False False False False False False False False False False
+ False False False False False False], kept_indices=[4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 35%|█████████████████████████████████████████████████▎                                                                                           | 7/20 [1:42:49<3:05:00, 853.89s/it]Warning: Truncating song_labels for s08 from 30 to 24                                                                                                                                 
+s08: 24 epochs, 24 labels, bad_trials=[ True  True False False  True False False False False  True  True False
+ False False False False False False False False False  True False False
+ False False False False False False], kept_indices=[2, 3, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29]
+ 40%|████████████████████████████████████████████████████████▍                                                                                    | 8/20 [1:58:17<2:55:29, 877.50s/it]Warning: Truncating song_labels for s09 from 30 to 25                                                                                                                                 
+s09: 25 epochs, 25 labels, bad_trials=[ True False False False False False False False  True  True  True False
+ False False False False False False False False False False False False
+ False False False  True False False], kept_indices=[1, 2, 3, 4, 5, 6, 7, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29]
+ 45%|███████████████████████████████████████████████████████████████▍                                                                             | 9/20 [2:12:26<2:39:13, 868.46s/it]Warning: Truncating song_labels for s10 from 30 to 29                                                                                                                                 
+s10: 29 epochs, 29 labels, bad_trials=[False False False False False False False False False False  True False
+ False False False False False False False False False False False False
+ False False False False False False], kept_indices=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 50%|██████████████████████████████████████████████████████████████████████                                                                      | 10/20 [2:31:15<2:38:11, 949.13s/it]Warning: Truncating song_labels for s11 from 30 to 23                                                                                                                                 
+s11: 23 epochs, 23 labels, bad_trials=[ True  True  True  True False False False False  True False False False
+ False  True False False False False False False False False False  True
+ False False False False False False], kept_indices=[4, 5, 6, 7, 9, 10, 11, 12, 14, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29]
+ 55%|█████████████████████████████████████████████████████████████████████████████                                                               | 11/20 [2:46:28<2:20:40, 937.80s/it]s12: 30 epochs, 30 labels, bad_trials=[False False False False False False False False False False False False                                                                        
+ False False False False False False False False False False False False
+ False False False False False False], kept_indices=[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 60%|███████████████████████████████████████████████████████████████████████████████████▍                                                       | 12/20 [3:06:10<2:14:58, 1012.31s/it]Warning: Truncating song_labels for s13 from 30 to 18                                                                                                                                 
+s13: 18 epochs, 18 labels, bad_trials=[False False False False False False False  True  True  True False False
+  True False False False  True False False False  True False False  True
+  True  True  True  True  True False], kept_indices=[0, 1, 2, 3, 4, 5, 6, 10, 11, 13, 14, 15, 17, 18, 19, 21, 22, 29]
+ 65%|███████████████████████████████████████████████████████████████████████████████████████████                                                 | 13/20 [3:17:42<1:46:45, 915.12s/it]Warning: Truncating song_labels for s14 from 30 to 25                                                                                                                                 
+s14: 25 epochs, 25 labels, bad_trials=[False False  True False False  True False False False False False  True
+ False False False  True False  True False False False False False False
+ False False False False False False], kept_indices=[0, 1, 3, 4, 6, 7, 8, 9, 10, 12, 13, 14, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+ 70%|██████████████████████████████████████████████████████████████████████████████████████████████████                                          | 14/20 [3:33:33<1:32:35, 925.91s/it]Warning: Truncating song_labels for s15 from 30 to 17                                                                                                                                 
+s15: 17 epochs, 17 labels, bad_trials=[False  True  True False  True False False False False False False False
+ False  True  True  True False  True  True  True False False False  True
+  True False  True False False  True], kept_indices=[0, 3, 5, 6, 7, 8, 9, 10, 11, 12, 16, 20, 21, 22, 25, 27, 28]
+ 75%|█████████████████████████████████████████████████████████████████████████████████████████████████████████                                   | 15/20 [3:44:56<1:11:04, 852.95s/it]Warning: Truncating song_labels for s16 from 30 to 27                                                                                                                                 
+s16: 27 epochs, 27 labels, bad_trials=[False False False False False False False False False  True  True False
+ False False False False False False False False False False False False
+ False  True False False False False], kept_indices=[0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27, 28, 29]
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████                            | 16/20 [4:04:08<1:02:51, 942.96s/it]Warning: Truncating song_labels for s17 from 30 to 10                                                                                                                                 
+s17: 10 epochs, 10 labels, bad_trials=[ True False  True  True False  True False  True False  True  True False
+  True  True False False False  True  True  True False  True False  True
+  True  True  True  True  True  True], kept_indices=[1, 4, 6, 8, 11, 14, 15, 16, 20, 22]
+ 85%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                     | 17/20 [4:11:13<39:21, 787.20s/it]Warning: Truncating song_labels for s18 from 30 to 25                                                                                                                                 
+s18: 25 epochs, 25 labels, bad_trials=[False False False False  True False False False False  True False  True
+ False False False False False False False False False False  True False
+  True False False False False False], kept_indices=[0, 1, 2, 3, 5, 6, 7, 8, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 25, 26, 27, 28, 29]
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊              | 18/20 [4:25:40<27:02, 811.06s/it]Warning: Truncating song_labels for s19 from 30 to 22                                                                                                                                 
+s19: 22 epochs, 22 labels, bad_trials=[ True False False  True False False False False False False False False
+  True False False False  True  True False  True False False False False
+ False False  True False  True False], kept_indices=[1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 18, 20, 21, 22, 23, 24, 25, 27, 29]
+ 95%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉       | 19/20 [4:33:16<11:44, 704.32s/it]Warning: Truncating song_labels for s20 from 30 to 12                                                                                                                                 
+s20: 12 epochs, 12 labels, bad_trials=[ True  True  True  True  True  True False False  True  True  True  True
+  True  True  True  True False False False False False  True False  True
+  True False  True False False False], kept_indices=[6, 7, 16, 17, 18, 19, 20, 22, 25, 27, 28, 29]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [4:37:10<00:00, 831.53s/it]
+                                                                                                                                                                                      
+✅ Feature extraction complete!
+Feature matrix shape: (439, 417)
+Number of features: 417
+Number of samples: 439
+Rating statistics: mean=3.04, std=1.63, range=[1.0, 5.0]
+
+✅ Features saved to '/home/anower/All/Python/Thesis_VS_code/full_epoch/Figure/eeg_features_full.pkl'
+
+======================================================================
+FEATURE EXTRACTION SUMMARY (FULL-SONG EPOCHS)
+======================================================================
+
+📊 Feature Categories:
+1. Power Spectral Density (PSD):
+   - Absolute & relative power for 5 bands × 14 channels = 140 features
+   - Peak frequencies for 5 bands × 14 channels = 70 features
+   - Normalized power for 5 bands = 5 features
+   - Hemispheric asymmetry for 5 bands × 2 regions = 10 features
+
+2. Statistical Features:
+   - 11 statistical measures × 14 channels = 154 features
+
+3. Connectivity Features:
+   - Global connectivity metrics = 5 features
+   - Specific channel pairs = 9 features
+   - Phase locking values = 5 features
+
+4. Nonlinear Features:
+   - Hjorth parameters, entropy measures for 4 channels = 16 features
+
+5. Temporal Features:
+   - Temporal variability for 4 channels = 8 features
+
+📈 Total: ~417 features

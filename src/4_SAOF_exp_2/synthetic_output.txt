@@ -1,0 +1,123 @@
+======================================================================
+SYNTHETIC DATA GENERATION FOR EEG FEATURES
+======================================================================
+✅ Original data loaded successfully!
+   Feature matrix shape: (439, 417)
+   Ratings shape: (439,)
+   Rating range: [1.0, 5.0]
+   Rating mean: 3.04 ± 1.63
+   Number of subjects: 20
+   Number of songs: 30
+   Number of features: 417
+
+⏱️ Starting synthetic data generation at 02:52:33
+
+🎯 Generating synthetic data (target ratio: 0.5x)...
+
+🔧 Generating rating-stratified synthetic data...
+   Original rating distribution:
+   Dislike (1): 142 samples (32.3%)
+   Medium (3): 146 samples (33.3%)
+   Like (5): 151 samples (34.4%)
+   Generated 9 samples for rating 1.0
+   Generated 5 samples for rating 3.0
+   Total synthetic samples generated: 14
+
+🔧 Generating Gaussian noise synthetic data...
+   Generated 51 synthetic samples using Gaussian noise
+
+🔧 Generating SMOTE-like synthetic data...
+   Generated 51 synthetic samples using SMOTE-like interpolation
+
+🔧 Generating GMM synthetic data...
+   Generated 51 synthetic samples using GMM
+
+🔧 Generating bootstrap synthetic data...
+   Generated 51 synthetic samples using bootstrap
+
+🔗 Combining original and synthetic data...
+   Added synthetic dataset 1: 14 samples
+   Added synthetic dataset 2: 51 samples
+   Added synthetic dataset 3: 51 samples
+   Added synthetic dataset 4: 51 samples
+   Added synthetic dataset 5: 51 samples
+
+📊 Final combined dataset:
+   Original samples: 439
+   Synthetic samples: 218
+   Total samples: 657
+   Augmentation ratio: 0.5x
+
+📊 Final rating distribution:
+   Dislike (1): 213 samples (32.4%)
+   Medium (3): 225 samples (34.2%)
+   Like (5): 219 samples (33.3%)
+
+📊 Creating PCA visualization...
+   PCA visualization saved to: /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/pca_comparison.png
+   PCA explained variance ratio:
+     PC1: 16.9%
+     PC2: 11.6%
+     Total: 28.5%
+
+💾 Saving synthetic dataset...
+✅ Synthetic dataset saved to: /home/anower/All/Python/Thesis_VS_code/full_epoch/emon/eeg_features_full_synthetic.pkl
+   Shape: (657, 417)
+   Features: 417
+   Subjects: 20
+   Songs: 30
+
+🔍 Validating synthetic data...
+📊 Data validation:
+   Original: 439 samples, 417 features
+   Synthetic: 657 samples, 417 features
+   Augmentation ratio: 1.5x
+
+📊 Rating distribution comparison:
+   Dislike (1.0): Original 32.3% vs Synthetic 32.4%
+   Medium (3.0): Original 33.3% vs Synthetic 34.2%
+   Like (5.0): Original 34.4% vs Synthetic 33.3%
+
+📊 Subject distribution comparison:
+   Original subjects: 20
+   Synthetic subjects: 20
+
+📊 Song distribution comparison:
+   Original songs: 30
+   Synthetic songs: 30
+
+📊 Feature statistics comparison:
+   Feature means correlation: -0.106
+   Feature stds correlation: -0.062
+⚠️ Synthetic data may have different properties than original
+
+✅ Synthetic data generation complete! (Total time: 4.3s)
+
+======================================================================
+SYNTHETIC DATA GENERATION SUMMARY
+======================================================================
+📊 Original dataset: 439 samples
+📊 Synthetic dataset: 657 samples
+📊 Augmentation ratio: 1.5x
+📊 Additional samples: 218
+
+🎯 Benefits of synthetic data:
+   ✅ Increased training data for better ML performance
+   ✅ Better class balance for classification
+   ✅ Reduced overfitting risk
+   ✅ More robust model training
+   ✅ PCA visualization shows data distribution quality
+
+🔄 Next steps:
+   1. Use '/home/anower/All/Python/Thesis_VS_code/full_epoch/emon/eeg_features_full_synthetic.pkl' in your ML model
+   2. Compare performance with original data
+   3. Analyze which synthetic methods work best
+   4. Review PCA visualization in '/home/anower/All/Python/Thesis_VS_code/full_epoch/emon/'
+
+💡 Tips for ML model:
+   • Update features_path to use synthetic data
+   • Monitor for overfitting with larger dataset
+   • Consider separate validation on original data only
+   • Compare results with and without synthetic data
+   • Use PCA plots to understand data quality and overlap
+
